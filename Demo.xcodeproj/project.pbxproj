@@ -14,6 +14,17 @@
 		0A26816420BB077E001B8665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A26816220BB077E001B8665 /* LaunchScreen.storyboard */; };
 		0A26816F20BB077E001B8665 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26816E20BB077E001B8665 /* DemoTests.swift */; };
 		0A26817A20BB077E001B8665 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26817920BB077E001B8665 /* DemoUITests.swift */; };
+		0A26818F20BB0E68001B8665 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26818E20BB0E68001B8665 /* ServiceManager.swift */; };
+		0A26819120BB0E7B001B8665 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26819020BB0E7B001B8665 /* ServiceType.swift */; };
+		0A26819320BB1298001B8665 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26819220BB1298001B8665 /* Movie.swift */; };
+		0A26819520BB1B5F001B8665 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26819420BB1B5F001B8665 /* Route.swift */; };
+		0A26819720BB1CEA001B8665 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26819620BB1CEA001B8665 /* Constant.swift */; };
+		0A26819920BB2362001B8665 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26819820BB2362001B8665 /* SearchResponse.swift */; };
+		0A26819B20BB2887001B8665 /* MoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26819A20BB2887001B8665 /* MoviesListViewController.swift */; };
+		0A26819D20BB289F001B8665 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26819C20BB289F001B8665 /* MoviesListViewModel.swift */; };
+		0A26819F20BB28DF001B8665 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26819E20BB28DF001B8665 /* MovieCell.swift */; };
+		0A2681AF20BB2962001B8665 /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2681AE20BB2962001B8665 /* MovieCellViewModel.swift */; };
+		0A2681C320BB8374001B8665 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2681C220BB8374001B8665 /* Environment.swift */; };
 		1C604ABED1C586A66C6728D5 /* Pods_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D258D55A860C3E80DBC43358 /* Pods_DemoUITests.framework */; };
 		4B2F9673C538DAD9EC0E8A85 /* Pods_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0296AC66A836A59B21A8E4C4 /* Pods_DemoTests.framework */; };
 		894C008B9508307E3E194C71 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46075DA119E10A5E632F2F6C /* Pods_Demo.framework */; };
@@ -51,6 +62,17 @@
 		0A26817520BB077E001B8665 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A26817920BB077E001B8665 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		0A26817B20BB077E001B8665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A26818E20BB0E68001B8665 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		0A26819020BB0E7B001B8665 /* ServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
+		0A26819220BB1298001B8665 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		0A26819420BB1B5F001B8665 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		0A26819620BB1CEA001B8665 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0A26819820BB2362001B8665 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		0A26819A20BB2887001B8665 /* MoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewController.swift; sourceTree = "<group>"; };
+		0A26819C20BB289F001B8665 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
+		0A26819E20BB28DF001B8665 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		0A2681AE20BB2962001B8665 /* MovieCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellViewModel.swift; sourceTree = "<group>"; };
+		0A2681C220BB8374001B8665 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		30569BB1BE64BB1CF4508798 /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3084EA51A8F3A90589A5B513 /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B145B90DFD430445F4D74FF /* Pods-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoUITests/Pods-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +136,7 @@
 		0A26815820BB077A001B8665 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				0A26818D20BB0E4D001B8665 /* Service Manager */,
 				0A26818C20BB07C5001B8665 /* Helpers */,
 				0A26818B20BB07BF001B8665 /* Model */,
 				0A26818A20BB07B2001B8665 /* Custom Cells */,
@@ -151,6 +174,7 @@
 		0A26818720BB0795001B8665 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
+				0A2681C220BB8374001B8665 /* Environment.swift */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -158,6 +182,8 @@
 		0A26818820BB079F001B8665 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0A26819C20BB289F001B8665 /* MoviesListViewModel.swift */,
+				0A2681AE20BB2962001B8665 /* MovieCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -165,6 +191,7 @@
 		0A26818920BB07AA001B8665 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A26819A20BB2887001B8665 /* MoviesListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -172,6 +199,7 @@
 		0A26818A20BB07B2001B8665 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0A26819E20BB28DF001B8665 /* MovieCell.swift */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -179,6 +207,8 @@
 		0A26818B20BB07BF001B8665 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0A26819220BB1298001B8665 /* Movie.swift */,
+				0A26819820BB2362001B8665 /* SearchResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +218,17 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A26818D20BB0E4D001B8665 /* Service Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0A26818E20BB0E68001B8665 /* ServiceManager.swift */,
+				0A26819020BB0E7B001B8665 /* ServiceType.swift */,
+				0A26819420BB1B5F001B8665 /* Route.swift */,
+				0A26819620BB1CEA001B8665 /* Constant.swift */,
+			);
+			path = "Service Manager";
 			sourceTree = "<group>";
 		};
 		143910E3A6106BCA74F8872B /* Pods */ = {
@@ -427,8 +468,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A26819720BB1CEA001B8665 /* Constant.swift in Sources */,
 				0A26815C20BB077A001B8665 /* ViewController.swift in Sources */,
+				0A26819B20BB2887001B8665 /* MoviesListViewController.swift in Sources */,
 				0A26815A20BB077A001B8665 /* AppDelegate.swift in Sources */,
+				0A26818F20BB0E68001B8665 /* ServiceManager.swift in Sources */,
+				0A26819D20BB289F001B8665 /* MoviesListViewModel.swift in Sources */,
+				0A26819920BB2362001B8665 /* SearchResponse.swift in Sources */,
+				0A2681AF20BB2962001B8665 /* MovieCellViewModel.swift in Sources */,
+				0A2681C320BB8374001B8665 /* Environment.swift in Sources */,
+				0A26819520BB1B5F001B8665 /* Route.swift in Sources */,
+				0A26819120BB0E7B001B8665 /* ServiceType.swift in Sources */,
+				0A26819F20BB28DF001B8665 /* MovieCell.swift in Sources */,
+				0A26819320BB1298001B8665 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,9 +655,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WQ5AYRFPVL;
 				INFOPLIST_FILE = Demo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = COM.Demo;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spuul.ios.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -618,9 +674,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WQ5AYRFPVL;
 				INFOPLIST_FILE = Demo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = COM.Demo;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spuul.ios.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -635,7 +695,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = COM.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -652,7 +716,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = COM.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -668,7 +736,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = COM.DemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -684,7 +756,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = COM.DemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
