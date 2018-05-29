@@ -29,7 +29,7 @@ public struct ServiceManager: ServiceType {
                     completion(true, nil, error)
                 }
             case .failure(let error):
-                completion(true, nil, error)
+                completion(false, nil, error)
                 
             }
         }

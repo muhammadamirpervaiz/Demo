@@ -25,6 +25,7 @@
 		0A26819F20BB28DF001B8665 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26819E20BB28DF001B8665 /* MovieCell.swift */; };
 		0A2681AF20BB2962001B8665 /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2681AE20BB2962001B8665 /* MovieCellViewModel.swift */; };
 		0A2681C320BB8374001B8665 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2681C220BB8374001B8665 /* Environment.swift */; };
+		0A2681D520BD30DD001B8665 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2681D420BD30DD001B8665 /* TableViewController.swift */; };
 		1C604ABED1C586A66C6728D5 /* Pods_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D258D55A860C3E80DBC43358 /* Pods_DemoUITests.framework */; };
 		4B2F9673C538DAD9EC0E8A85 /* Pods_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0296AC66A836A59B21A8E4C4 /* Pods_DemoTests.framework */; };
 		894C008B9508307E3E194C71 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46075DA119E10A5E632F2F6C /* Pods_Demo.framework */; };
@@ -73,6 +74,7 @@
 		0A26819E20BB28DF001B8665 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		0A2681AE20BB2962001B8665 /* MovieCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellViewModel.swift; sourceTree = "<group>"; };
 		0A2681C220BB8374001B8665 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		0A2681D420BD30DD001B8665 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		30569BB1BE64BB1CF4508798 /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3084EA51A8F3A90589A5B513 /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B145B90DFD430445F4D74FF /* Pods-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoUITests/Pods-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				0A26819A20BB2887001B8665 /* MoviesListViewController.swift */,
+				0A2681D420BD30DD001B8665 /* TableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A26819720BB1CEA001B8665 /* Constant.swift in Sources */,
+				0A2681D520BD30DD001B8665 /* TableViewController.swift in Sources */,
 				0A26815C20BB077A001B8665 /* ViewController.swift in Sources */,
 				0A26819B20BB2887001B8665 /* MoviesListViewController.swift in Sources */,
 				0A26815A20BB077A001B8665 /* AppDelegate.swift in Sources */,

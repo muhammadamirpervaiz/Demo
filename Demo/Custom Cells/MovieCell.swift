@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class MovieCell: UITableViewCell {
 
     @IBOutlet weak var movieImageView: UIImageView!
@@ -25,6 +25,9 @@ class MovieCell: UITableViewCell {
         self.name.text = item.title;
         self.releaseDate.text = item.release_date
         self.overview.text = item.overview
+        if let imageURL = item.poster_path {
+            self.movieImageView.sd_setImage(with: URL.init(string: "https://image.tmdb.org/t/p/w500\(imageURL)") , completed: nil)
+        }
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
