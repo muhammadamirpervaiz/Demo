@@ -12,10 +12,14 @@ class MoviesListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     internal var viewModel: MoviesListViewModel!
     var footerView: UIView!
     var loaderView: UIActivityIndicatorView!
-    
+
+    fileprivate var cellHeights: [Int: [Int: CGFloat]] = [:]
+
     override func viewDidLoad() {
         
         self.searchBar.becomeFirstResponder()
@@ -34,7 +38,6 @@ class MoviesListViewController: UIViewController {
         footerView.addSubview(loaderView)
         self.tableView.tableFooterView = footerView
         
-        
         self.bindViewModel()
         super.viewDidLoad()
 
@@ -44,14 +47,17 @@ class MoviesListViewController: UIViewController {
     func bindViewModel() {
         
         self.viewModel.reloadTableView = {[unowned self] in
+            self.activityIndicator.stopAnimating()
             self.tableView.reloadData()
         }
         
         self.viewModel.updateTableView = { [unowned self] (array) in
-            self.tableView.beginUpdates()
-            self.tableView.insertRows(at: array, with: .none)
-            self.tableView.endUpdates()
-            self.loaderView.stopAnimating()
+            
+            DispatchQueue.main.async {
+                self.tableView.insertRows(at: array, with: .fade)
+                self.tableView.setContentOffset(self.tableView.contentOffset, animated: false)
+                self.loaderView.stopAnimating()
+            }
         }
         
         self.viewModel.errorOccured = { [unowned self] (message) in
@@ -111,12 +117,28 @@ extension MoviesListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (self.viewModel.cellType == .Suggesstions) {
+            let query = self.viewModel.getSuggesstionAt(indexPath.row)
+            self.activityIndicator.startAnimating()
+            
+            self.viewModel.resetPagination()
+            self.viewModel.setCellType(.Movies)
+            self.tableView.reloadData()
+            
+            self.viewModel.fetchMoviesList(query)
+            self.searchBar.text = query
+        }
+    }
 }
 
 extension MoviesListViewController: UISearchBarDelegate {
     
     // called when keyboard search button pressed
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar)  {
+        self.activityIndicator.startAnimating()
+        self.viewModel.resetPagination()
         self.viewModel.fetchMoviesList(searchBar.text!)
     }
     

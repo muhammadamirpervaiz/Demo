@@ -83,11 +83,11 @@ class MoviesListViewModel: NSObject {
     
     func count() -> Int {
         if cellType == .Movies {
-        if let count = moviesList?.count {
-            return count
+            if let count = moviesList?.count {
+                return count
+            }
+            return 0
         }
-        return 0
-    }
         else {
             if let count = suggesstionList?.count {
                 return count
@@ -97,21 +97,26 @@ class MoviesListViewModel: NSObject {
     }
     
     func addQueryInSuggesstions(_ query: String) {
-    if (self.suggesstionList?.contains(query))! {
-    let index = self.suggesstionList?.index(of: query)
-    self.suggesstionList?.remove(at: index!)
-    self.suggesstionList?.insert(query, at: 0)
-    }
-    else {
-    self.suggesstionList?.insert(query, at: 0)
+        if (self.suggesstionList?.contains(query))! {
+            let index = self.suggesstionList?.index(of: query)
+            self.suggesstionList?.remove(at: index!)
+            self.suggesstionList?.insert(query, at: 0)
+        }
+        else {
+            self.suggesstionList?.insert(query, at: 0)
+        }
+        
+        if ((self.suggesstionList?.count)! > 10) {
+            self.suggesstionList?.removeLast()
+        }
+        
+        self.appEnvironment.suggesstionArray = self.suggesstionList;
     }
     
-    if ((self.suggesstionList?.count)! > 10) {
-    self.suggesstionList?.removeLast()
+    func resetPagination()  {
+        self.pageCount = 1
     }
     
-    self.appEnvironment.suggesstionArray = self.suggesstionList;
-    }
     func getObjectAt(_ index: Int) -> Movie {
         return self.moviesList![index]
     }

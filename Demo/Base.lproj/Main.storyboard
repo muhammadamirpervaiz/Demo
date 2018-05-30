@@ -79,6 +79,7 @@
                                                 <constraint firstItem="LKJ-QQ-J20" firstAttribute="leading" secondItem="GB6-SA-CX1" secondAttribute="trailing" constant="8" symbolic="YES" id="6k7-gf-cR9"/>
                                                 <constraint firstItem="2dB-jW-DDe" firstAttribute="top" secondItem="LKJ-QQ-J20" secondAttribute="bottom" constant="3" id="6wk-hC-sSg"/>
                                                 <constraint firstItem="LKJ-QQ-J20" firstAttribute="leading" secondItem="2dB-jW-DDe" secondAttribute="leading" id="Cen-pe-FVd"/>
+                                                <constraint firstItem="2dB-jW-DDe" firstAttribute="leading" secondItem="2U4-dK-GSU" secondAttribute="leading" id="L74-vk-GcC"/>
                                                 <constraint firstAttribute="bottom" secondItem="2U4-dK-GSU" secondAttribute="bottom" constant="25.5" id="PoX-Bt-b4L"/>
                                                 <constraint firstAttribute="trailing" secondItem="2U4-dK-GSU" secondAttribute="trailing" constant="15" id="X0S-XD-0OS"/>
                                                 <constraint firstItem="GB6-SA-CX1" firstAttribute="top" secondItem="hMo-tP-Cxz" secondAttribute="top" id="e4h-hM-XTH"/>
@@ -109,6 +110,9 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Dgd-Ja-86R"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bNr-4Q-mIM">
+                                <rect key="frame" x="176" y="324" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -117,12 +121,15 @@
                             <constraint firstAttribute="trailing" secondItem="9Iv-57-r0f" secondAttribute="trailing" id="7Tg-Ye-dxX"/>
                             <constraint firstItem="9Iv-57-r0f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cny-SN-bVI"/>
                             <constraint firstItem="9Iv-57-r0f" firstAttribute="trailing" secondItem="lND-La-O2K" secondAttribute="trailing" id="VHS-3W-auK"/>
+                            <constraint firstItem="bNr-4Q-mIM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bA9-ct-RtW"/>
                             <constraint firstItem="lND-La-O2K" firstAttribute="top" secondItem="9Iv-57-r0f" secondAttribute="bottom" id="nBF-u7-ljF"/>
+                            <constraint firstItem="bNr-4Q-mIM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="qBk-Fq-FvJ"/>
                             <constraint firstItem="9Iv-57-r0f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vN5-ju-dhx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="bNr-4Q-mIM" id="7TC-zQ-WSX"/>
                         <outlet property="searchBar" destination="9Iv-57-r0f" id="JZL-rY-IyH"/>
                         <outlet property="tableView" destination="lND-La-O2K" id="Epy-i3-X4g"/>
                     </connections>
