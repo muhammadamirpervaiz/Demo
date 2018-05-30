@@ -52,7 +52,6 @@ class MoviesListViewController: UIViewController {
         }
         
         self.viewModel.updateTableView = { [unowned self] (array) in
-            
             DispatchQueue.main.async {
                 self.tableView.insertRows(at: array, with: .fade)
                 self.tableView.setContentOffset(self.tableView.contentOffset, animated: false)

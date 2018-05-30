@@ -19,7 +19,7 @@ class ViewModelTests: TestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
-    func testEmptySearchTextField() {
+    func testEmptySearchBar() {
         viewModel.errorOccured = { (message) in
             XCTAssertEqual(message, "Enter movie name")
         }
@@ -31,13 +31,12 @@ class ViewModelTests: TestCase {
         
         (environment.sharedService as! MockService).mockResponse = self.mockSearchResponse()
         viewModel.fetchMoviesList("Batman")
-        viewModel.reloadTableView = {
+        viewModel.reloadTableView = { [unowned self] in
             XCTAssertEqual(self.viewModel.moviesList?.count, 20)
             XCTAssertTrue((self.viewModel.moviesList?.count)! > 0, "count is greater than zero")
         }
         
         (environment.sharedService as! MockService).fetchSuccessResponse()
-        
     }
     
     func testSearchResultNotFound()  {
@@ -67,10 +66,42 @@ class ViewModelTests: TestCase {
     
     func testPaginatedResponse() {
         
+        /// Load First page and check for count
+        
+        (environment.sharedService as! MockService).mockResponse = self.mockSearchResponse()
+        viewModel.fetchMoviesList("Batman")
+        
+        viewModel.reloadTableView = { [unowned self] in
+                XCTAssertTrue((self.viewModel.moviesList?.count) == 20, "Load first page")
+        }
+        (environment.sharedService as! MockService).fetchSuccessResponse()
+        
+        /// Load second page and check for count
+        
+        viewModel.loadPaginatedResponseWith("Batman")
+        
+        viewModel.updateTableView = { [unowned self] _ in
+            XCTAssertTrue((self.viewModel.moviesList?.count) == 40, "Load second page")
+        }
+        
+        (environment.sharedService as! MockService).fetchSuccessResponse()
     }
-
-    
    
+    func testSuccessfulQueriesInSuggesstions() {
+        
+        /// Load First page and check for count
+        
+        (environment.sharedService as! MockService).mockResponse = self.mockSearchResponse()
+        viewModel.fetchMoviesList("Batman")
+        
+        viewModel.reloadTableView = { [unowned self] in
+            XCTAssertTrue((self.environment.suggesstionArray?.contains("Batman"))!, "Batman is saved in suggesstions on success")
+        }
+        
+        (environment.sharedService as! MockService).fetchSuccessResponse()
+        
+    }
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
