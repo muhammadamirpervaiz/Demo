@@ -14,6 +14,8 @@ target 'Demo' do
   target 'DemoTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'ModelMapper'
+
   end
 
   target 'DemoUITests' do

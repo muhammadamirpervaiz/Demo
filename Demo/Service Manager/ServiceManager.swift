@@ -9,9 +9,7 @@
 import UIKit
 import Alamofire
 
-typealias Response = (Any, Error)
-
-public struct ServiceManager: ServiceType {
+public class ServiceManager: ServiceType {
     
     public func searchMovie(_ query: String, page: Int, completion: @escaping ((Bool, SearchResponse?, Error?) -> Void)) {
         

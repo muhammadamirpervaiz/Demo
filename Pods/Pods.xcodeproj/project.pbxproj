@@ -14,6 +14,7 @@
 		0CB1529229C6C02162D154C910DE1443 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E7F3448A1036682A164062DCCC97A0 /* UIImageView+WebCache.m */; };
 		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52279652AFFC8147B27B00C93F0FC3EA /* Timeline.swift */; };
 		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 299194AF87D39AB516F8702167E27CB8 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BDD24B71D19A0B1F62CA7FF59862CCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */; };
 		1E4D6C5626521EF7BDB52F791ED0433A /* ModelMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D27D4B4F78631DB9DFE4322B5214245E /* ModelMapper-dummy.m */; };
 		2056D01E1F33F2ADC31E438B692FBD24 /* SDWebImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 103579516DA6658484E991A2EE47D28C /* SDWebImageCodersManager.m */; };
 		21774F2CFF0CA9C51BD3CE285D5EBDC4 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 948037130866BD9F78D6F4F76D746AC8 /* NSData+ImageContentType.m */; };
@@ -23,7 +24,6 @@
 		2B6E72A0A4083C1D7F0D9FCCAF1FA789 /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C01053A66173C3D0B6F1726B5F25440 /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BFB1EE433365153878A816D8D02817B /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0AC7BB5D28A2FBE8E41A6DB3116E00 /* UIView+WebCache.m */; };
 		2C3AF7E9E0FF959F10895C84CAFB4751 /* SDWebImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF05B064E2F1B1FC1562A1DCAFD843A /* SDWebImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F6D8C4937CCF6BDEF4A84DAF62C6B03 /* Pods-DemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC7A288325666D148AD70B2D8CB0976 /* Pods-DemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31513C1D2601E3181EB5E3A793FC27FD /* SDWebImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4420419B0BA45CD2BAECDA194D54A979 /* SDWebImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3261C9FB747DDBE1EC807292669FE964 /* SDWebImageCoderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD94B007C5F8E4E54A85913EA598857 /* SDWebImageCoderHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3494E105B951FC114A727621E577D5BD /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B5AC1F3D35237A11779182E4CBBA7D5 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +34,7 @@
 		3AE7939F71D18EDAD561AFE2BC306EDB /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 221CEF73C8310EAC711F6CD9BF22F3E0 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D45C5D32E04928C1AAF3790BCB833DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */; };
 		404FD1998FF53748CFDE1CD44F20DE69 /* SDWebImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A56EED292E0DBB9F230B4171D2DEEC /* SDWebImageGIFCoder.m */; };
+		40A7F348F13BE3FF207C923981E436A6 /* Pods-DemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC7A288325666D148AD70B2D8CB0976 /* Pods-DemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		489327503020FBD5CA7A373BDBBD2F7F /* Pods-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6769A6750FB9D8CE749D8BF1A9B0890C /* Pods-Demo-dummy.m */; };
 		4B93994AEDD44CB4F9F00F2671AC8FB0 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BC67CF7990084BD9606C84DE98C357D5 /* NSImage+WebCache.m */; };
 		4F2788E8222F7A4C7778E7D7F739BCE8 /* Transform+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A305436DEDD6284A6129358068279D58 /* Transform+Dictionary.swift */; };
@@ -52,6 +53,7 @@
 		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08A5B278FC43E154A1D890B67DD3F8 /* ServerTrustPolicy.swift */; };
 		63486B38CDB1D9C6EE86E38E285D3352 /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D20E889F69FEAC0F37039511CFBCAA /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65B4A10D040C0002801248AFFA6DA18D /* Pods-DemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A80739A96D3A4F0243806AA56B9403C9 /* Pods-DemoUITests-dummy.m */; };
+		686DDB2455E08691526953D4CD2A4A83 /* Pods-DemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C16EAA86588BCE11DFA5022A231C13 /* Pods-DemoTests-dummy.m */; };
 		6AB7FB7C86DD2E90903EA3504FF0D47C /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5E4FC8F72CDBF52C56794454A3015 /* Mappable.swift */; };
 		6B3CF21BC3604DCDA3255C6848239198 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 537BD3F35BEA0B026ECBCA0E38DA942D /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E9B7630EE55B6B06E4A6E82C70C5014 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = EF499C8D533F5FB3C7BFA9DC450908A3 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,7 +81,6 @@
 		ADCA530E78921341958280E0CC1D67AF /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA296C7CC929FA328FE05072E3EB6D /* SDAnimatedImageRep.m */; };
 		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB405FA680CF139A3A179B449AA45B5A /* SessionManager.swift */; };
 		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D138A06C794F24E355ADD0C6DDEA6E4 /* MultipartFormData.swift */; };
-		B9883B696634072C1A7FBE4E0257177A /* Pods-DemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C16EAA86588BCE11DFA5022A231C13 /* Pods-DemoTests-dummy.m */; };
 		BAEF6F2282BB327C18830C6401BFDFD1 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6B040FF5A184F751AC4BED1F9F478 /* SDWebImageManager.m */; };
 		BB0BC604FACDF2129D235012171FA5CB /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B2B5AB862C5C8E4AA571A9C4192173D /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F664A9DFB72984220E29FAFFC6BB1D9 /* Validation.swift */; };
@@ -90,7 +91,6 @@
 		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7502C4C4726DEDA3FEC77883575D001B /* Response.swift */; };
 		CBE72AD42F479C6115752481E4476E3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */; };
 		CD8F9C459186A9CAC79CEAC76818EE5A /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220EA3A02EAA97E9B1A7A69019B00AD /* UIImage+ForceDecode.m */; };
-		D355EBFAA5D334104204D912C1E1CA25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */; };
 		D38B46E008066D69090D81486F8794BF /* Pods-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7F4E1458F7255A9530ADBE12329DEC /* Pods-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7E05F76942415CACE7BCF648C18E060 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D501BA714841258FFEE089C7EE23E80A /* UIView+WebCacheOperation.m */; };
 		D99C968B5FBE06AC36498AC7D04ECAD3 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BC85FF1770BA113DEAC8FAF7F25C18 /* Transform.swift */; };
@@ -108,7 +108,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6BFF8C2CB25CCC2D1E2BED6C687BD25E /* PBXContainerItemProxy */ = {
+		49070F43DE6A3DB333C202527975E61F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -121,6 +121,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = B8BD4B2EA87ECBF8FD6D8CFC50D10F1C;
 			remoteInfo = "Pods-Demo";
+		};
+		BCDB7B3C34AC5ED1EA0C7A1FDE2C4EB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBCC69D7C794145A1D1F84A3164E6083;
+			remoteInfo = ModelMapper;
 		};
 		CFDB782A40B5B481E9BDA4F1DA1352BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -285,6 +292,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		520B65EE0F1FD3BCA25883A84974874E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BDD24B71D19A0B1F62CA7FF59862CCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E12BB79273CAEEF5F0832ACC80BA0A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,14 +330,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D45C5D32E04928C1AAF3790BCB833DE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E1329F8D095670F37B552CA14CCF243D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D355EBFAA5D334104204D912C1E1CA25 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,14 +642,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B532C3BD09D561D841126B36D6C6749C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F6D8C4937CCF6BDEF4A84DAF62C6B03 /* Pods-DemoTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E3B8B8F79F6648493547B0A70E4D19A2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -683,6 +682,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				389B6B7EA42A88E98C6B919E5CC62A54 /* Pods-DemoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA422D3ECD29791445B9B70596B484F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A7F348F13BE3FF207C923981E436A6 /* Pods-DemoTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,18 +768,19 @@
 			productReference = D44D7CA3658DD7BEA760BC7622AB8262 /* Pods_Demo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E96EB664B3484F11D0CED88419F2DFFC /* Pods-DemoTests */ = {
+		EB83E6D599FC364FF5CBDDD9C3CF9373 /* Pods-DemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F23F8E146044A94EE960EC71D25CD2D6 /* Build configuration list for PBXNativeTarget "Pods-DemoTests" */;
+			buildConfigurationList = D4B8FC5ECE75BE23FFB0F4DE6075674E /* Build configuration list for PBXNativeTarget "Pods-DemoTests" */;
 			buildPhases = (
-				8587ED0B7EE86AEB4B1769FF7E5586F9 /* Sources */,
-				E1329F8D095670F37B552CA14CCF243D /* Frameworks */,
-				B532C3BD09D561D841126B36D6C6749C /* Headers */,
+				ED0850C4929245A4600B6C75A0C55F33 /* Sources */,
+				520B65EE0F1FD3BCA25883A84974874E /* Frameworks */,
+				FA422D3ECD29791445B9B70596B484F1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E2C0AA89530437337B13E93CB76CCE4D /* PBXTargetDependency */,
+				12982ADFDE747731D7583A00501AF699 /* PBXTargetDependency */,
+				CA99D7365353E7B5C0EBF7501061ACD1 /* PBXTargetDependency */,
 			);
 			name = "Pods-DemoTests";
 			productName = "Pods-DemoTests";
@@ -820,7 +828,7 @@
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
 				FBCC69D7C794145A1D1F84A3164E6083 /* ModelMapper */,
 				B8BD4B2EA87ECBF8FD6D8CFC50D10F1C /* Pods-Demo */,
-				E96EB664B3484F11D0CED88419F2DFFC /* Pods-DemoTests */,
+				EB83E6D599FC364FF5CBDDD9C3CF9373 /* Pods-DemoTests */,
 				83E4DE7394A0004124DEF0A5EC2A7A56 /* Pods-DemoUITests */,
 				34A1667FA9B61C28808EFD2FA04ED11B /* SDWebImage */,
 			);
@@ -895,14 +903,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8587ED0B7EE86AEB4B1769FF7E5586F9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9883B696634072C1A7FBE4E0257177A /* Pods-DemoTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		90C3F95EE1ADBF1D19517266704BB691 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -928,6 +928,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED0850C4929245A4600B6C75A0C55F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686DDB2455E08691526953D4CD2A4A83 /* Pods-DemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -936,6 +944,12 @@
 			name = ModelMapper;
 			target = FBCC69D7C794145A1D1F84A3164E6083 /* ModelMapper */;
 			targetProxy = E50859A8A8E4F589FA3D0C8EFE825947 /* PBXContainerItemProxy */;
+		};
+		12982ADFDE747731D7583A00501AF699 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ModelMapper;
+			target = FBCC69D7C794145A1D1F84A3164E6083 /* ModelMapper */;
+			targetProxy = BCDB7B3C34AC5ED1EA0C7A1FDE2C4EB2 /* PBXContainerItemProxy */;
 		};
 		9D02947041D0081EB31811EA9799D009 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -949,22 +963,22 @@
 			target = 34A1667FA9B61C28808EFD2FA04ED11B /* SDWebImage */;
 			targetProxy = DF9A0E0BE9E3F1FC2B9A0FF60D383AB0 /* PBXContainerItemProxy */;
 		};
+		CA99D7365353E7B5C0EBF7501061ACD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Demo";
+			target = B8BD4B2EA87ECBF8FD6D8CFC50D10F1C /* Pods-Demo */;
+			targetProxy = 49070F43DE6A3DB333C202527975E61F /* PBXContainerItemProxy */;
+		};
 		CE1E97529C82CD49F987DB22CEA11043 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = CFDB782A40B5B481E9BDA4F1DA1352BC /* PBXContainerItemProxy */;
 		};
-		E2C0AA89530437337B13E93CB76CCE4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Demo";
-			target = B8BD4B2EA87ECBF8FD6D8CFC50D10F1C /* Pods-Demo */;
-			targetProxy = 6BFF8C2CB25CCC2D1E2BED6C687BD25E /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		21AC68E9792DCBB5363E953326F3F089 /* Release */ = {
+		0C76D2C9519F2DEE6B2FD5153D6E011B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60656C41F13462A0584A0EC924AE3B93 /* Pods-DemoTests.release.xcconfig */;
 			buildSettings = {
@@ -992,6 +1006,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -999,7 +1014,7 @@
 			};
 			name = Release;
 		};
-		2503B97373B289BD215F5437E40C29AA /* Debug */ = {
+		5264C5E249979622B24EEFF82E056123 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C51C160604CF6C4E6FBAAB080FF1141 /* Pods-DemoTests.debug.xcconfig */;
 			buildSettings = {
@@ -1027,6 +1042,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1545,11 +1562,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F23F8E146044A94EE960EC71D25CD2D6 /* Build configuration list for PBXNativeTarget "Pods-DemoTests" */ = {
+		D4B8FC5ECE75BE23FFB0F4DE6075674E /* Build configuration list for PBXNativeTarget "Pods-DemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2503B97373B289BD215F5437E40C29AA /* Debug */,
-				21AC68E9792DCBB5363E953326F3F089 /* Release */,
+				5264C5E249979622B24EEFF82E056123 /* Debug */,
+				0C76D2C9519F2DEE6B2FD5153D6E011B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

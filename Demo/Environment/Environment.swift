@@ -12,17 +12,22 @@ class Environment: NSObject {
 
     var sharedService: ServiceType
     
-    var suggesstionArray: [String] {
+    var suggesstionArray: [String]? {
         get{
-            return UserDefaults.standard.value(forKey: "Suggesstions") as! [String]
+            if let array = (UserDefaults.standard.value(forKey: "Suggesstions") as? [String]) {
+                return array
+            }
+            else {
+                return []
+            }
         }
         set{
             UserDefaults.standard.set(newValue, forKey: "Suggesstions")
             UserDefaults.standard.synchronize()
         }
     }
-    
-    override init() {
-        self.sharedService = ServiceManager()
+
+    init(sharedService: ServiceType = ServiceManager()) {
+        self.sharedService = sharedService
     }
 }

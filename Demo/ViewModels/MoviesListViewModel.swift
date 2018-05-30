@@ -16,7 +16,7 @@ class MoviesListViewModel: NSObject {
 
     let apiClient: ServiceType!
     var moviesList: [Movie]?
-    var suggesstionList: [String]? = []
+    var suggesstionList: [String]? 
     var pageCount: Int = 1
     var totalPages: Int = 0
     var isLoading: Bool = false
@@ -30,7 +30,6 @@ class MoviesListViewModel: NSObject {
         suggesstionList = environment.suggesstionArray
     }
     
-    var moviesArray: [Movie]?
     var reloadTableView: (() -> ())!
     var updateTableView: (([IndexPath]) -> ())!
 
@@ -40,7 +39,7 @@ class MoviesListViewModel: NSObject {
             self.errorOccured("Enter movie name")
             return
         }
-        
+
         apiClient.searchMovie(query, page: pageCount) { [unowned self] (success, response, error) in
             if success {
                 if (response?.results?.count)! > 0 {
@@ -59,9 +58,8 @@ class MoviesListViewModel: NSObject {
                     else {
                         self.totalPages = (response?.total_pages)!
                         self.moviesList = response?.results
-                        // with every successful result add suggesstion in the list //
-                        self.suggesstionList?.append(query)
-                        self.appEnvironment.suggesstionArray = self.suggesstionList!;
+                        
+                        self.addQueryInSuggesstions(query)
                         self.reloadTableView()
                     }
                     self.isLoading = false
@@ -71,7 +69,7 @@ class MoviesListViewModel: NSObject {
                 }
             }
             else {
-                
+                self.errorOccured("Error Occured. Please try again")
             }
         }
     }
@@ -98,6 +96,22 @@ class MoviesListViewModel: NSObject {
         }
     }
     
+    func addQueryInSuggesstions(_ query: String) {
+    if (self.suggesstionList?.contains(query))! {
+    let index = self.suggesstionList?.index(of: query)
+    self.suggesstionList?.remove(at: index!)
+    self.suggesstionList?.insert(query, at: 0)
+    }
+    else {
+    self.suggesstionList?.insert(query, at: 0)
+    }
+    
+    if ((self.suggesstionList?.count)! > 10) {
+    self.suggesstionList?.removeLast()
+    }
+    
+    self.appEnvironment.suggesstionArray = self.suggesstionList;
+    }
     func getObjectAt(_ index: Int) -> Movie {
         return self.moviesList![index]
     }
