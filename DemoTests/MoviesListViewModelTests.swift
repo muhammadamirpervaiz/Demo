@@ -19,11 +19,18 @@ class ViewModelTests: TestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
+    func testSearchBarBecomeFirstResponder()  {
+        self.viewModel.viewDidLoadCalled = {
+            XCTAssertTrue(true, "Search bar become first responder")
+        }
+        
+        self.viewModel.viewDidLoad()
+    }
+
     func testEmptySearchBar() {
         viewModel.errorOccured = { (message) in
             XCTAssertEqual(message, "Enter movie name")
         }
-        
         viewModel.fetchMoviesList("")
     }
     

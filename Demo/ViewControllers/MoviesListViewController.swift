@@ -22,9 +22,7 @@ class MoviesListViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        self.searchBar.becomeFirstResponder()
         viewModel = MoviesListViewModel.init(getEnvironment())
-
         self.searchBar.delegate = self
         tableView.keyboardDismissMode = .onDrag
         tableView.estimatedRowHeight = 100.0
@@ -39,12 +37,20 @@ class MoviesListViewController: UIViewController {
         self.tableView.tableFooterView = footerView
         
         self.bindViewModel()
+        
+        viewModel.viewDidLoad()
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
     func bindViewModel() {
+        
+        self.viewModel.viewDidLoadCalled = {
+            DispatchQueue.main.async {
+                self.searchBar.becomeFirstResponder()
+            }
+        }
         
         self.viewModel.reloadTableView = {[unowned self] in
             DispatchQueue.main.async {
@@ -139,12 +145,12 @@ extension MoviesListViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension MoviesListViewController: UISearchBarDelegate {
-    
     // called when keyboard search button pressed
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar)  {
         self.activityIndicator.startAnimating()
         self.viewModel.resetPagination()
         self.viewModel.fetchMoviesList(searchBar.text!)
+        self.view.endEditing(true)
     }
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool // return NO to not become first responder

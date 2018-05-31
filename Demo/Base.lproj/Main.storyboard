@@ -111,7 +111,7 @@
                                 </connections>
                             </tableView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bNr-4Q-mIM">
-                                <rect key="frame" x="176" y="324" width="20" height="20"/>
+                                <rect key="frame" x="177.5" y="324" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -119,11 +119,12 @@
                             <constraint firstItem="9Iv-57-r0f" firstAttribute="leading" secondItem="lND-La-O2K" secondAttribute="leading" id="65x-IK-syC"/>
                             <constraint firstItem="lND-La-O2K" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6Fp-cL-nqz"/>
                             <constraint firstAttribute="trailing" secondItem="9Iv-57-r0f" secondAttribute="trailing" id="7Tg-Ye-dxX"/>
+                            <constraint firstItem="bNr-4Q-mIM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B94-ei-MIB"/>
                             <constraint firstItem="9Iv-57-r0f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cny-SN-bVI"/>
                             <constraint firstItem="9Iv-57-r0f" firstAttribute="trailing" secondItem="lND-La-O2K" secondAttribute="trailing" id="VHS-3W-auK"/>
                             <constraint firstItem="bNr-4Q-mIM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bA9-ct-RtW"/>
+                            <constraint firstItem="bNr-4Q-mIM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bO6-2p-FON"/>
                             <constraint firstItem="lND-La-O2K" firstAttribute="top" secondItem="9Iv-57-r0f" secondAttribute="bottom" id="nBF-u7-ljF"/>
-                            <constraint firstItem="bNr-4Q-mIM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="qBk-Fq-FvJ"/>
                             <constraint firstItem="9Iv-57-r0f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vN5-ju-dhx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

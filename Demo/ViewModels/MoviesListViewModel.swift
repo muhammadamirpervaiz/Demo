@@ -14,6 +14,7 @@ enum cellType {
 
 class MoviesListViewModel: NSObject {
 
+    ///Input
     let apiClient: ServiceType!
     var moviesList: [Movie]?
     var suggesstionList: [String]? 
@@ -22,17 +23,23 @@ class MoviesListViewModel: NSObject {
     var isLoading: Bool = false
     var cellType: cellType = .Suggesstions
     var appEnvironment: Environment!
+    
+    /// Output
     var errorOccured: ((String) -> ())!
+    var reloadTableView: (() -> ())!
+    var updateTableView: (([IndexPath]) -> ())!
+    var viewDidLoadCalled: (() -> ())!
 
     init(_ environment: Environment) {
         appEnvironment = environment
         apiClient = environment.sharedService
         suggesstionList = environment.suggesstionArray
     }
-    
-    var reloadTableView: (() -> ())!
-    var updateTableView: (([IndexPath]) -> ())!
 
+    func viewDidLoad() {
+        self.viewDidLoadCalled()
+    }
+    
     func fetchMoviesList(_ query: String) {
         
         if (query.count == 0) {
