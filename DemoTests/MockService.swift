@@ -8,7 +8,9 @@
 
 import UIKit
 @testable import Demo
-
+/**
+ Used for mocking api calls.
+ */
 public class MockService: ServiceType {
     
     var mockResponse: SearchResponse? = nil

@@ -67,7 +67,7 @@ class MoviesListViewModel: NSObject {
                         self.totalPages = (response?.total_pages)!
                         self.moviesList = response?.results
                         
-                        self.addQueryInSuggesstions(query)
+                        self.updateSuggesstions(query)
                         self.reloadTableView()
                     }
                     self.isLoading = false
@@ -104,7 +104,7 @@ class MoviesListViewModel: NSObject {
         }
     }
     
-    func addQueryInSuggesstions(_ query: String) {
+    func updateSuggesstions(_ query: String) {
         if (self.suggesstionList?.contains(query))! {
             let index = self.suggesstionList?.index(of: query)
             self.suggesstionList?.remove(at: index!)

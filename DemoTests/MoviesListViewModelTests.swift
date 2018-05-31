@@ -130,6 +130,7 @@ class ViewModelTests: TestCase {
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        viewModel = nil
         super.tearDown()
     }
     
@@ -152,6 +153,7 @@ class ViewModelTests: TestCase {
         return SearchResponse.from(jsonResult as! NSDictionary)!
     }
 }
+
 class MockUserDefaults : UserDefaults {
     
     convenience init() {
