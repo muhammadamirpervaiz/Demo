@@ -8,9 +8,7 @@
 
 import UIKit
 import Alamofire
-/**
- User for making 
- */
+
 public class ServiceManager: ServiceType {
     
     public func searchMovie(_ query: String, page: Int, completion: @escaping ((Bool, SearchResponse?, Error?) -> Void)) {

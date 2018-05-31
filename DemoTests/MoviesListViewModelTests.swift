@@ -21,7 +21,7 @@ class ViewModelTests: TestCase {
     
     func testSearchBarBecomeFirstResponder()  {
         self.viewModel.viewDidLoadCalled = {
-            XCTAssertTrue(true, "Search bar become first responder")
+            XCTAssertTrue(true, "Search bar should become first Responder when viewDidLoad is called")
         }
         
         self.viewModel.viewDidLoad()
@@ -29,7 +29,7 @@ class ViewModelTests: TestCase {
 
     func testEmptySearchBar() {
         viewModel.errorOccured = { (message) in
-            XCTAssertEqual(message, "Enter movie name")
+            XCTAssertEqual(message, "Search bar is empty.")
         }
         viewModel.fetchMoviesList("")
     }
@@ -40,7 +40,7 @@ class ViewModelTests: TestCase {
         viewModel.fetchMoviesList("Batman")
         viewModel.reloadTableView = { [unowned self] in
             XCTAssertEqual(self.viewModel.moviesList?.count, 20)
-            XCTAssertTrue((self.viewModel.moviesList?.count)! > 0, "count is greater than zero")
+            XCTAssertTrue((self.viewModel.moviesList?.count)! > 0, "On success, results should be greater than zero")
         }
         
         (environment.sharedService as! MockService).fetchSuccessResponse()
@@ -107,6 +107,13 @@ class ViewModelTests: TestCase {
         (environment.sharedService as! MockService).fetchSuccessResponse()
     }
     
+    func testSwitchingToSuggesstionList() {
+        
+        self.viewModel.setCellType(.Suggesstions)
+        XCTAssertTrue(self.viewModel.moviesList == nil)
+        XCTAssertTrue(self.viewModel.cellType == .Suggesstions)
+    }
+    
     /*
     func testDuplicateQueryInSuggesstionListAndCount() {
         
@@ -123,7 +130,6 @@ class ViewModelTests: TestCase {
         viewModel.reloadTableView = { [unowned self] in
             XCTAssertTrue(self.environment.suggesstionArray?.count == 4, "No duplicate query found...")
         }
-        
         (environment.sharedService as! MockService).fetchSuccessResponse()
     }
  */
@@ -152,17 +158,4 @@ class ViewModelTests: TestCase {
         let jsonResult = try! JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
         return SearchResponse.from(jsonResult as! NSDictionary)!
     }
-}
-
-class MockUserDefaults : UserDefaults {
-    
-    convenience init() {
-        self.init(suiteName: "Mock User Defaults")!
-    }
-    
-    override init?(suiteName suitename: String?) {
-        UserDefaults().removePersistentDomain(forName: suitename!)
-        super.init(suiteName: suitename)
-    }
-    
 }

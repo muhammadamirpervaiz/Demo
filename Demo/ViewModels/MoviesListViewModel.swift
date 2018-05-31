@@ -14,7 +14,7 @@ enum cellType {
 
 class MoviesListViewModel: NSObject {
 
-    ///Input
+    ///Input 
     let apiClient: ServiceType!
     var moviesList: [Movie]?
     var suggesstionList: [String]? 
@@ -22,7 +22,6 @@ class MoviesListViewModel: NSObject {
     var totalPages: Int = 0
     var isLoading: Bool = false
     var cellType: cellType = .Suggesstions
-    var appEnvironment: Environment!
     
     /// Output
     var errorOccured: ((String) -> ())!
@@ -31,7 +30,6 @@ class MoviesListViewModel: NSObject {
     var viewDidLoadCalled: (() -> ())!
 
     init(_ environment: Environment) {
-        appEnvironment = environment
         apiClient = environment.sharedService
         suggesstionList = environment.suggesstionArray
     }
@@ -118,7 +116,7 @@ class MoviesListViewModel: NSObject {
             self.suggesstionList?.removeLast()
         }
         
-        self.appEnvironment.suggesstionArray = self.suggesstionList;
+        getEnvironment().suggesstionArray = self.suggesstionList;
     }
     
     func resetPagination()  {
