@@ -67,7 +67,6 @@ class ViewModelTests: TestCase {
     func testPaginatedResponse() {
         
         /// Load First page and check for count
-        
         (environment.sharedService as! MockService).mockResponse = self.mockSearchResponse()
         viewModel.fetchMoviesList("Batman")
         
@@ -99,8 +98,28 @@ class ViewModelTests: TestCase {
         }
         
         (environment.sharedService as! MockService).fetchSuccessResponse()
-        
     }
+    
+    /*
+    func testDuplicateQueryInSuggesstionListAndCount() {
+        
+        self.environment.suggesstionArray = []
+        /// Load First page and check for count
+        (environment.sharedService as! MockService).mockResponse = self.mockSearchResponse()
+        viewModel.fetchMoviesList("Batman")
+        viewModel.fetchMoviesList("Batman")
+        viewModel.fetchMoviesList("Superman")
+        viewModel.fetchMoviesList("Comedy")
+        viewModel.fetchMoviesList("Action")
+        viewModel.fetchMoviesList("Superman")
+        
+        viewModel.reloadTableView = { [unowned self] in
+            XCTAssertTrue(self.environment.suggesstionArray?.count == 4, "No duplicate query found...")
+        }
+        
+        (environment.sharedService as! MockService).fetchSuccessResponse()
+    }
+ */
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
@@ -120,10 +139,21 @@ class ViewModelTests: TestCase {
     }
     
     func mockSearchResponse() -> SearchResponse {
-        
         let path = Bundle.main.path(forResource: "content", ofType: "json")!
         let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
         let jsonResult = try! JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
         return SearchResponse.from(jsonResult as! NSDictionary)!
     }
+}
+class MockUserDefaults : UserDefaults {
+    
+    convenience init() {
+        self.init(suiteName: "Mock User Defaults")!
+    }
+    
+    override init?(suiteName suitename: String?) {
+        UserDefaults().removePersistentDomain(forName: suitename!)
+        super.init(suiteName: suitename)
+    }
+    
 }

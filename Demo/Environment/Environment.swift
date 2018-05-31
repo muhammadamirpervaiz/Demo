@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ Class containing all global and Singleton variables that app has access to.
+ */
 class Environment: NSObject {
 
     var sharedService: ServiceType

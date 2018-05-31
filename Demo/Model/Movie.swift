@@ -46,3 +46,7 @@ extension Movie : Mappable {
         release_date = map.optionalFrom("release_date")
     }
 }
+
+extension Movie {
+    internal static let template =  Movie(vote_count: 1, id: 2, video: true, vote_average: 2.3, title: "Batman", popularity: 3.55, poster_path: "https://api.themoviedb.org", original_language: "en", original_title: "Batman", genre_ids: [], backdrop_path: "https://api.themoviedb.org", adult: false, overview: "Awesome", release_date: "2017-10-10")
+}

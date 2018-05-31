@@ -15,6 +15,7 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var releaseDate: UILabel!
     @IBOutlet weak var overview: UILabel!
     
+    var viewModel: MovieCellViewModel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,10 +23,16 @@ class MovieCell: UITableViewCell {
 
     func configureWith(_ item: Movie )  {
         
-        self.name.text = item.title;
-        self.releaseDate.text = item.release_date
-        self.overview.text = item.overview
-        if let imageURL = item.poster_path {
+        viewModel = MovieCellViewModel(title: item.title, releaseDate: item.release_date, overview: item.overview, posterImage: item.poster_path)
+        
+        self.bindViewModel()
+    }
+    
+    func bindViewModel() {
+        self.name.text = viewModel.title;
+        self.releaseDate.text = viewModel.releaseDate
+        self.overview.text = viewModel.overview
+        if let imageURL = viewModel.posterImage {
             self.movieImageView.sd_setImage(with: URL.init(string: "https://image.tmdb.org/t/p/w500\(imageURL)") , completed: nil)
         }
     }
@@ -35,5 +42,4 @@ class MovieCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

@@ -30,6 +30,7 @@
 		0A2681EB20BDB3D0001B8665 /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2681EA20BDB3D0001B8665 /* TestCase.swift */; };
 		0A2681ED20BDB937001B8665 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2681EC20BDB937001B8665 /* MockService.swift */; };
 		0A2681EF20BDC362001B8665 /* MoviesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2681EE20BDC362001B8665 /* MoviesListViewModelTests.swift */; };
+		0A2681FF20BFC5F0001B8665 /* MovieCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2681FE20BFC5F0001B8665 /* MovieCellViewModelTests.swift */; };
 		1C604ABED1C586A66C6728D5 /* Pods_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D258D55A860C3E80DBC43358 /* Pods_DemoUITests.framework */; };
 		4B2F9673C538DAD9EC0E8A85 /* Pods_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0296AC66A836A59B21A8E4C4 /* Pods_DemoTests.framework */; };
 		894C008B9508307E3E194C71 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46075DA119E10A5E632F2F6C /* Pods_Demo.framework */; };
@@ -83,6 +84,7 @@
 		0A2681EA20BDB3D0001B8665 /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		0A2681EC20BDB937001B8665 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		0A2681EE20BDC362001B8665 /* MoviesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModelTests.swift; sourceTree = "<group>"; };
+		0A2681FE20BFC5F0001B8665 /* MovieCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellViewModelTests.swift; sourceTree = "<group>"; };
 		30569BB1BE64BB1CF4508798 /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3084EA51A8F3A90589A5B513 /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B145B90DFD430445F4D74FF /* Pods-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoUITests/Pods-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +150,6 @@
 			children = (
 				0A2681E820BDB1B9001B8665 /* content.json */,
 				0A26818D20BB0E4D001B8665 /* Service Manager */,
-				0A26818C20BB07C5001B8665 /* Helpers */,
 				0A26818B20BB07BF001B8665 /* Model */,
 				0A26818A20BB07B2001B8665 /* Custom Cells */,
 				0A26818920BB07AA001B8665 /* ViewControllers */,
@@ -172,6 +173,7 @@
 				0A2681EA20BDB3D0001B8665 /* TestCase.swift */,
 				0A2681EC20BDB937001B8665 /* MockService.swift */,
 				0A2681EE20BDC362001B8665 /* MoviesListViewModelTests.swift */,
+				0A2681FE20BFC5F0001B8665 /* MovieCellViewModelTests.swift */,
 			);
 			path = DemoTests;
 			sourceTree = "<group>";
@@ -226,13 +228,6 @@
 				0A26819820BB2362001B8665 /* SearchResponse.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		0A26818C20BB07C5001B8665 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		0A26818D20BB0E4D001B8665 /* Service Manager */ = {
@@ -528,6 +523,7 @@
 				0A2681EB20BDB3D0001B8665 /* TestCase.swift in Sources */,
 				0A2681EF20BDC362001B8665 /* MoviesListViewModelTests.swift in Sources */,
 				0A2681ED20BDB937001B8665 /* MockService.swift in Sources */,
+				0A2681FF20BFC5F0001B8665 /* MovieCellViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,7 +621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -679,7 +675,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -696,7 +692,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQ5AYRFPVL;
 				INFOPLIST_FILE = Demo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.spuul.ios.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -712,7 +711,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQ5AYRFPVL;
 				INFOPLIST_FILE = Demo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.spuul.ios.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -729,7 +731,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQ5AYRFPVL;
 				INFOPLIST_FILE = DemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = COM.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -747,7 +753,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQ5AYRFPVL;
 				INFOPLIST_FILE = DemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = COM.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -763,7 +773,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = COM.DemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -779,7 +793,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = COM.DemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

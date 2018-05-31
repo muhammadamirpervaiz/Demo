@@ -16,7 +16,6 @@ public class MockService: ServiceType {
     
     public func searchMovie(_ query: String, page: Int, completion: @escaping ((Bool, SearchResponse?, Error?) -> Void)) {
         completeClosure = completion
-        
     }
     
     func fetchSuccessResponse() {
@@ -31,5 +30,4 @@ public class MockService: ServiceType {
     func fetchEmptyResultArray() {
         completeClosure( true, SearchResponse.template, nil)
     }
-    
 }

@@ -47,8 +47,10 @@ class MoviesListViewController: UIViewController {
     func bindViewModel() {
         
         self.viewModel.reloadTableView = {[unowned self] in
-            self.activityIndicator.stopAnimating()
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating()
+                self.tableView.reloadData()
+            }
         }
         
         self.viewModel.updateTableView = { [unowned self] (array) in
@@ -60,7 +62,11 @@ class MoviesListViewController: UIViewController {
         }
         
         self.viewModel.errorOccured = { [unowned self] (message) in
-            self.showAlertView(message)
+            DispatchQueue.main.async {
+                self.showAlertView(message)
+                self.activityIndicator.stopAnimating()
+            }
+            
         }
     }
     

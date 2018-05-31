@@ -8,6 +8,9 @@
 
 import UIKit
 
-class MovieCellViewModel: NSObject {
-
+struct MovieCellViewModel {
+    var title: String?
+    var releaseDate: String?
+    var overview: String?
+    var posterImage: String?
 }

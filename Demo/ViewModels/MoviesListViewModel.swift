@@ -39,7 +39,8 @@ class MoviesListViewModel: NSObject {
             self.errorOccured("Enter movie name")
             return
         }
-
+        
+        print("page count is: \(pageCount)")
         apiClient.searchMovie(query, page: pageCount) { [unowned self] (success, response, error) in
             if success {
                 if (response?.results?.count)! > 0 {
