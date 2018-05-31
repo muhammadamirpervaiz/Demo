@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1BF18620C050C300D73205 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A1BF18520C050C300D73205 /* README.md */; };
 		0A26815A20BB077A001B8665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26815920BB077A001B8665 /* AppDelegate.swift */; };
 		0A26815F20BB077A001B8665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A26815D20BB077A001B8665 /* Main.storyboard */; };
 		0A26816120BB077E001B8665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A26816020BB077E001B8665 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		0296AC66A836A59B21A8E4C4 /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1BF18520C050C300D73205 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A26815620BB077A001B8665 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A26815920BB077A001B8665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A26815E20BB077A001B8665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		0A26814D20BB077A001B8665 = {
 			isa = PBXGroup;
 			children = (
+				0A1BF18520C050C300D73205 /* README.md */,
 				0A26815820BB077A001B8665 /* Demo */,
 				0A26816D20BB077E001B8665 /* DemoTests */,
 				0A26817820BB077E001B8665 /* DemoUITests */,
@@ -369,6 +372,7 @@
 			files = (
 				0A26816420BB077E001B8665 /* LaunchScreen.storyboard in Resources */,
 				0A26816120BB077E001B8665 /* Assets.xcassets in Resources */,
+				0A1BF18620C050C300D73205 /* README.md in Resources */,
 				0A26815F20BB077A001B8665 /* Main.storyboard in Resources */,
 				0A2681E920BDB1B9001B8665 /* content.json in Resources */,
 			);
