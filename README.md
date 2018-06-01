@@ -12,4 +12,9 @@ For saving, since the requirment was to save 10 last recent sugesstion. I have u
 
 I checked this app on  iOS 9.3 and 11.3.1
 
+**Third party libraries**
+ Alamofire'
+'SDWebImage'
+'ModelMapper'
+
 
