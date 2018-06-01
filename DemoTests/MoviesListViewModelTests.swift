@@ -48,7 +48,7 @@ class ViewModelTests: TestCase {
     
     func testSearchResultNotFound()  {
         
-        (environment.sharedService as! MockService).mockResponse = self.mockSearchResponse()
+        (environment.sharedService as! MockService).mockResponse = SearchResponse.template
         viewModel.fetchMoviesList("123456")
         
         viewModel.errorOccured = { message in
